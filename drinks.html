@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6f4e37">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Coffee">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Milk Drinks</title>
+</head>
+<body data-page="drinks">
+
+  <header class="topbar">
+    <a class="back" href="index.html">‹ Home</a>
+    <h1>Milk Drinks</h1>
+  </header>
+
+  <main class="page">
+    <p class="sub" style="color: var(--ink-soft); font-size: 16px;">
+      Every drink below starts with a <a href="espresso.html" style="color: var(--accent); font-weight: 600;">double espresso</a>. The only difference is what goes on top.
+    </p>
+
+    <div class="card">
+      <h3>☕ Espresso</h3>
+      <p class="sub">Just the shot · small cup</p>
+      <div class="ratio">
+        <div class="r-espresso" style="flex: 1;">espresso</div>
+      </div>
+      <div class="body">
+        <p><b>Ratio:</b> espresso only, ~36 g out from 18 g in</p>
+        <p><b>Serve:</b> straight away — crema fades fast</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>💧 Americano</h3>
+      <p class="sub">Espresso + hot water · mug</p>
+      <div class="ratio">
+        <div class="r-espresso" style="flex: 1;">espresso</div>
+        <div class="r-water" style="flex: 3;">hot water</div>
+      </div>
+      <div class="body">
+        <p><b>Ratio:</b> 1 part espresso, 3–4 parts hot water</p>
+        <p><b>Tip:</b> water in the mug first, then the shot on top keeps the crema</p>
+        <p><b>Common mistake:</b> boiling water — just-off-the-boil is smoother</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🥛 Latte</h3>
+      <p class="sub">Milky and mild · tall glass or mug</p>
+      <div class="ratio">
+        <div class="r-espresso" style="flex: 1;">espresso</div>
+        <div class="r-milk" style="flex: 4;">steamed milk</div>
+        <div class="r-foam" style="flex: 1;">foam</div>
+      </div>
+      <div class="body">
+        <p><b>Ratio:</b> 1 part espresso, 4 parts milk, thin foam layer</p>
+        <p><b>Milk:</b> silky, barely any foam — pour from low, slowly</p>
+        <p><b>Common mistake:</b> milk too hot; it should be drinkable immediately</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚪ Flat White</h3>
+      <p class="sub">Stronger latte · small cup</p>
+      <div class="ratio">
+        <div class="r-espresso" style="flex: 1;">espresso</div>
+        <div class="r-milk" style="flex: 2;">steamed milk</div>
+      </div>
+      <div class="body">
+        <p><b>Ratio:</b> 1 part espresso, 2 parts milk, almost no foam</p>
+        <p><b>Milk:</b> glossy "wet paint" texture, no visible bubbles</p>
+        <p><b>Common mistake:</b> too much milk — it's meant to taste of coffee</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🟤 Cortado</h3>
+      <p class="sub">Half and half · small glass</p>
+      <div class="ratio">
+        <div class="r-espresso" style="flex: 1;">espresso</div>
+        <div class="r-milk" style="flex: 1;">steamed milk</div>
+      </div>
+      <div class="body">
+        <p><b>Ratio:</b> equal parts espresso and warm milk</p>
+        <p><b>Milk:</b> warm and smooth, not foamy</p>
+        <p><b>Common mistake:</b> steaming a huge jug for such a small drink</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>☁️ Cappuccino</h3>
+      <p class="sub">The foamy one · medium cup</p>
+      <div class="ratio">
+        <div class="r-espresso" style="flex: 1;">espresso</div>
+        <div class="r-milk" style="flex: 1;">milk</div>
+        <div class="r-foam" style="flex: 1;">foam</div>
+      </div>
+      <div class="body">
+        <p><b>Ratio:</b> thirds — espresso, steamed milk, thick foam</p>
+        <p><b>Milk:</b> stretch it longer at the start for a deep foam cap</p>
+        <p><b>Common mistake:</b> stiff, dry bubbles — good foam still pours</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

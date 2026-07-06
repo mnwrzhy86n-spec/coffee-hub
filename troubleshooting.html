@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6f4e37">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Coffee">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Troubleshooting</title>
+</head>
+<body data-page="troubleshooting">
+
+  <header class="topbar">
+    <a class="back" href="index.html">‹ Home</a>
+    <h1>Troubleshooting</h1>
+  </header>
+
+  <main class="page">
+    <p style="color: var(--ink-soft); font-size: 16px;">
+      One rule: change <b>one thing at a time</b>, and only for the <b>next</b> shot. This one is already made — drink it.
+    </p>
+
+    <div class="card symptom">
+      <h3>😖 Too sour <span class="tag tag-bad">under-extracted</span></h3>
+      <div class="body">
+        <p>Sharp, lemony, thin. The water didn't pull enough out of the coffee.</p>
+        <div class="fixrow"><span class="arrow">→</span><p>Grind <b>finer</b></p></div>
+        <div class="fixrow"><span class="arrow">→</span><p>Or let the shot run a few seconds <b>longer</b></p></div>
+        <div class="fixrow"><span class="arrow">→</span><p>Check the machine was fully <b>warmed up</b></p></div>
+      </div>
+    </div>
+
+    <div class="card symptom">
+      <h3>😣 Too bitter <span class="tag tag-bad">over-extracted</span></h3>
+      <div class="body">
+        <p>Harsh, ashy, dries your mouth. The water pulled out too much.</p>
+        <div class="fixrow"><span class="arrow">→</span><p>Grind <b>coarser</b></p></div>
+        <div class="fixrow"><span class="arrow">→</span><p>Or stop the shot a few seconds <b>earlier</b></p></div>
+        <div class="fixrow"><span class="arrow">→</span><p>Old, stale beans also taste bitter — check the bag date</p></div>
+      </div>
+    </div>
+
+    <div class="card symptom">
+      <h3>💨 Too fast <span class="tag tag-bad">under 20 seconds</span></h3>
+      <div class="body">
+        <p>Gushes out pale and watery.</p>
+        <div class="fixrow"><span class="arrow">→</span><p>Grind <b>finer</b></p></div>
+        <div class="fixrow"><span class="arrow">→</span><p>Check the dose — was it really <b>18 g</b>?</p></div>
+        <div class="fixrow"><span class="arrow">→</span><p>Tamp <b>level</b> — a tilted puck lets water sneak past one side</p></div>
+      </div>
+    </div>
+
+    <div class="card symptom">
+      <h3>🐌 Too slow <span class="tag tag-bad">over 35 seconds</span></h3>
+      <div class="body">
+        <p>Drips reluctantly, or barely comes out at all.</p>
+        <div class="fixrow"><span class="arrow">→</span><p>Grind <b>coarser</b></p></div>
+        <div class="fixrow"><span class="arrow">→</span><p>Tamp <b>lighter</b></p></div>
+        <div class="fixrow"><span class="arrow">→</span><p>Too much coffee in the basket — weigh the dose again</p></div>
+      </div>
+    </div>
+
+    <div class="card symptom">
+      <h3>🫥 No crema</h3>
+      <div class="body">
+        <p>The shot comes out flat, no golden layer on top.</p>
+        <div class="fixrow"><span class="arrow">→</span><p><b>Fresh beans</b> matter most — crema fades weeks after roasting</p></div>
+        <div class="fixrow"><span class="arrow">→</span><p>Grind <b>finer</b> if the shot also ran fast</p></div>
+      </div>
+    </div>
+
+    <div class="card symptom">
+      <h3>🫧 Milk gone wrong</h3>
+      <div class="body">
+        <p>Big bubbles, or paper-thin milk with no texture.</p>
+        <div class="fixrow"><span class="arrow">→</span><p><b>Big bubbles:</b> wand tip too shallow — swirl and tap the jug to rescue it</p></div>
+        <div class="fixrow"><span class="arrow">→</span><p><b>No foam at all:</b> wand tip too deep — start with it just under the surface</p></div>
+        <div class="fixrow"><span class="arrow">→</span><p><b>Screams while steaming:</b> cold jug pressed too hard against the wand — lower it slightly</p></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

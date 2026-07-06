@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6f4e37">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Coffee">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Make an Espresso</title>
+</head>
+<body data-page="espresso">
+
+  <div class="flow">
+    <header class="topbar">
+      <a class="back" href="index.html">‹ Home</a>
+      <h1>Make an Espresso</h1>
+    </header>
+
+    <nav class="dots" aria-hidden="true"></nav>
+
+    <div class="steps">
+
+      <!-- Cover -->
+      <section class="step cover">
+        <span class="cover-emoji">☕</span>
+        <h2>Make an Espresso</h2>
+        <p>Six easy steps. Swipe as you go — nothing here can go badly wrong.</p>
+        <button class="btn btn-primary btn-big" data-start>🟤 Start</button>
+      </section>
+
+      <!-- 1 · Prep -->
+      <section class="step">
+        <span class="step-kicker">Step 1 of 6</span>
+        <h2>Prep the Machine</h2>
+        <figure class="photo">
+          <div class="fallback">⚙️<small>Add photo: images/step-1-prep.jpg</small></div>
+          <img src="images/step-1-prep.jpg" alt="The machine, ready to go" onerror="this.remove()">
+        </figure>
+        <div class="checks">
+          <label><input type="checkbox" id="prep-water"><span>Fill the water tank</span></label>
+          <label><input type="checkbox" id="prep-on"><span>Turn on the machine, wait for warm-up</span></label>
+          <label><input type="checkbox" id="prep-flush"><span>Run water through the empty portafilter</span></label>
+        </div>
+        <details class="help">
+          <summary>Need help?</summary>
+          <div class="help-body">
+            <p><b>Why flush first?</b><span>It warms the group and portafilter so the coffee doesn't hit cold metal — cold gear makes sour shots.</span></p>
+            <p><b>How long to warm up?</b><span>Wait until the ready light is steady. A few extra minutes never hurts.</span></p>
+          </div>
+        </details>
+        <div class="step-nav">
+          <button class="btn btn-ghost" data-back>‹ Back</button>
+          <button class="btn btn-primary" data-next>Next ›</button>
+        </div>
+      </section>
+
+      <!-- 2 · Grind -->
+      <section class="step">
+        <span class="step-kicker">Step 2 of 6</span>
+        <h2>Grind</h2>
+        <figure class="photo">
+          <div class="fallback">⚖️<small>Add photo: images/step-2-grind.jpg</small></div>
+          <img src="images/step-2-grind.jpg" alt="A correctly filled basket" onerror="this.remove()">
+        </figure>
+        <div class="facts">
+          <div class="fact"><div class="n">18 g</div><div class="l">Dose</div></div>
+          <div class="fact"><div class="n">Fine</div><div class="l">Grind</div></div>
+        </div>
+        <div class="checks">
+          <label><input type="checkbox" id="grind-dose"><span>Grind 18 g into the basket</span></label>
+          <label><input type="checkbox" id="grind-check"><span>Basket looks evenly filled, no big clumps</span></label>
+        </div>
+        <details class="help">
+          <summary>Need help?</summary>
+          <div class="help-body">
+            <p><b>How fine is "fine"?</b><span>Like table salt, almost powdery — much finer than for a French press. If unsure, leave the grinder where it is; it's already dialled in.</span></p>
+            <p><b>Overflowing or half empty?</b><span>Level it off with a finger and re-weigh. 17–19 g is fine.</span></p>
+          </div>
+        </details>
+        <div class="step-nav">
+          <button class="btn btn-ghost" data-back>‹ Back</button>
+          <button class="btn btn-primary" data-next>Next ›</button>
+        </div>
+      </section>
+
+      <!-- 3 · Tamp -->
+      <section class="step">
+        <span class="step-kicker">Step 3 of 6</span>
+        <h2>Tamp</h2>
+        <figure class="photo">
+          <div class="fallback">🤲<small>Add photo: images/step-3-tamp.jpg</small></div>
+          <img src="images/step-3-tamp.jpg" alt="Tamping the coffee level" onerror="this.remove()">
+        </figure>
+        <div class="checks">
+          <label><input type="checkbox" id="tamp-distribute"><span>Distribute — tap or swirl so the grounds sit evenly</span></label>
+          <label><input type="checkbox" id="tamp-press"><span>Tamp straight down, firm and level</span></label>
+          <label><input type="checkbox" id="tamp-polish"><span>Gentle twist to polish the surface</span></label>
+        </div>
+        <details class="help">
+          <summary>Need help?</summary>
+          <div class="help-body">
+            <p><b>How hard do I press?</b><span>Firm handshake pressure. Level matters far more than force.</span></p>
+            <p><b>Is it level?</b><span>Look at the tamper from the side — it should sit flat, not tilted.</span></p>
+          </div>
+        </details>
+        <div class="step-nav">
+          <button class="btn btn-ghost" data-back>‹ Back</button>
+          <button class="btn btn-primary" data-next>Next ›</button>
+        </div>
+      </section>
+
+      <!-- 4 · Brew -->
+      <section class="step">
+        <span class="step-kicker">Step 4 of 6</span>
+        <h2>Brew</h2>
+        <figure class="photo">
+          <div class="fallback">🍯<small>Add photo: images/step-4-brew.jpg</small></div>
+          <img src="images/step-4-brew.jpg" alt="Espresso flowing like warm honey" onerror="this.remove()">
+        </figure>
+        <div class="facts">
+          <div class="fact"><div class="n">25–30 s</div><div class="l">Shot time</div></div>
+          <div class="fact"><div class="n">Double</div><div class="l">Shot</div></div>
+        </div>
+        <div class="checks">
+          <label><input type="checkbox" id="brew-lock"><span>Lock in the portafilter, cup underneath</span></label>
+          <label><input type="checkbox" id="brew-go"><span>Start the double shot</span></label>
+        </div>
+        <div class="signals">
+          <p class="yes">✅ Honey-like flow — slow, golden, syrupy</p>
+          <p class="no">❌ Gushing out — grind is too coarse</p>
+          <p class="no">❌ Barely dripping — grind is too fine</p>
+        </div>
+        <details class="help">
+          <summary>Need help?</summary>
+          <div class="help-body">
+            <p><b>Too fast (under 20 s)?</b><span>The water raced through. Next shot: grind finer, or check you used the full 18 g.</span></p>
+            <p><b>Too slow (over 35 s)?</b><span>Next shot: grind coarser, or tamp a little lighter.</span></p>
+            <p><b>Tastes sour?</b><span>Under-extracted — grind finer or let the shot run a touch longer.</span></p>
+            <p><b>Tastes bitter?</b><span>Over-extracted — grind coarser or stop the shot a touch earlier.</span></p>
+            <p><b>This shot is "wrong"?</b><span>Drink it anyway if it's close — adjustments are for the next one.</span></p>
+          </div>
+        </details>
+        <div class="step-nav">
+          <button class="btn btn-ghost" data-back>‹ Back</button>
+          <button class="btn btn-primary" data-next>Next ›</button>
+        </div>
+      </section>
+
+      <!-- 5 · Steam milk -->
+      <section class="step">
+        <span class="step-kicker">Step 5 of 6</span>
+        <h2>Steam the Milk</h2>
+        <figure class="photo">
+          <div class="fallback">🥛<small>Add photo: images/step-5-milk.jpg</small></div>
+          <img src="images/step-5-milk.jpg" alt="Milk jug filled to the right level" onerror="this.remove()">
+        </figure>
+        <div class="checks">
+          <label><input type="checkbox" id="milk-fill"><span>Fill the jug to just below the spout</span></label>
+          <label><input type="checkbox" id="milk-steam"><span>Steam until the jug is hot to hold (not scalding)</span></label>
+          <label><input type="checkbox" id="milk-wipe"><span>Immediately wipe the wand + quick purge</span></label>
+        </div>
+        <details class="help">
+          <summary>Need help?</summary>
+          <div class="help-body">
+            <p><b>Skipping milk?</b><span>Making a straight espresso or americano? Swipe on past this step.</span></p>
+            <p><b>Big bubbles?</b><span>Keep the wand tip just under the surface at the start, then deeper. Tap the jug on the counter and swirl to smooth it out.</span></p>
+            <p><b>Why wipe right away?</b><span>Milk bakes onto a hot wand in seconds and is a pain to clean later.</span></p>
+          </div>
+        </details>
+        <div class="step-nav">
+          <button class="btn btn-ghost" data-back>‹ Back</button>
+          <button class="btn btn-primary" data-next>Next ›</button>
+        </div>
+      </section>
+
+      <!-- 6 · Clean up -->
+      <section class="step">
+        <span class="step-kicker">Step 6 of 6</span>
+        <h2>Clean Up</h2>
+        <figure class="photo">
+          <div class="fallback">🧼<small>Add photo: images/step-6-clean.jpg</small></div>
+          <img src="images/step-6-clean.jpg" alt="Knocking out the puck" onerror="this.remove()">
+        </figure>
+        <div class="checks">
+          <label><input type="checkbox" id="clean-knock"><span>Knock the puck into the bin</span></label>
+          <label><input type="checkbox" id="clean-rinse"><span>Rinse the portafilter and basket</span></label>
+          <label><input type="checkbox" id="clean-tray"><span>Empty the drip tray if it's full</span></label>
+        </div>
+        <details class="help">
+          <summary>Need help?</summary>
+          <div class="help-body">
+            <p><b>Puck stuck?</b><span>One firm knock on the bin's edge beats ten timid taps. It's fine if a little coffee stays behind — rinse it out.</span></p>
+          </div>
+        </details>
+        <div class="step-nav">
+          <button class="btn btn-ghost" data-back>‹ Back</button>
+          <a class="btn btn-primary" href="index.html">Done ✓</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

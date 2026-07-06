@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6f4e37">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Coffee">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Cleaning</title>
+</head>
+<body data-page="cleaning">
+
+  <header class="topbar">
+    <a class="back" href="index.html">‹ Home</a>
+    <h1>Cleaning</h1>
+  </header>
+
+  <main class="page">
+
+    <h2>After every use</h2>
+    <div class="checks">
+      <label><input type="checkbox" id="daily-puck"><span>Knock out the puck</span></label>
+      <label><input type="checkbox" id="daily-rinse"><span>Rinse portafilter &amp; basket</span></label>
+      <label><input type="checkbox" id="daily-wand"><span>Wipe + purge the steam wand</span></label>
+      <label><input type="checkbox" id="daily-flush"><span>Quick water flush through the group</span></label>
+    </div>
+
+    <h2>Weekly</h2>
+    <div class="checks">
+      <label><input type="checkbox" id="week-tray"><span>Empty and wash the drip tray</span></label>
+      <label><input type="checkbox" id="week-tank"><span>Rinse the water tank, refill fresh</span></label>
+      <label><input type="checkbox" id="week-screen"><span>Scrub the shower screen with a brush</span></label>
+      <label><input type="checkbox" id="week-hopper"><span>Wipe out the bean hopper</span></label>
+    </div>
+
+    <h2>Monthly</h2>
+    <div class="checks">
+      <label><input type="checkbox" id="month-backflush"><span>Deep-clean / backflush if the machine supports it</span></label>
+      <label><input type="checkbox" id="month-descale"><span>Descale when the machine asks (or every 2–3 months)</span></label>
+      <label><input type="checkbox" id="month-grinder"><span>Brush out the grinder burrs</span></label>
+    </div>
+
+    <div class="reset-row">
+      <button class="btn btn-ghost" data-reset>Reset all checkboxes</button>
+    </div>
+
+    <div class="card">
+      <h3>💡 Why bother?</h3>
+      <div class="body">
+        <p>Old coffee oils go rancid and make every shot taste bitter — most "bad machine" problems are really "dirty machine" problems.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
