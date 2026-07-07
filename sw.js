@@ -1,6 +1,6 @@
 /* Coffee Hub service worker — cache-first so the guide works offline in the kitchen. */
 
-var CACHE = "coffee-hub-v1";
+var CACHE = "coffee-hub-v2";
 
 var PRECACHE = [
   "./",

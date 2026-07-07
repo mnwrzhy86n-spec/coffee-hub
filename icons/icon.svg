@@ -1,24 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <!-- Full-bleed background: iOS rounds the corners itself -->
-  <rect width="512" height="512" fill="#6f4e37"/>
-  <rect width="512" height="512" fill="url(#g)"/>
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#8a6448"/>
-      <stop offset="1" stop-color="#5a3c28"/>
+      <stop offset="0" stop-color="#242019"/>
+      <stop offset="1" stop-color="#131110"/>
     </linearGradient>
   </defs>
-  <!-- Steam -->
-  <g stroke="#f5efe7" stroke-width="16" stroke-linecap="round" fill="none" opacity="0.85">
-    <path d="M215 118 c-12 22 12 34 0 56"/>
-    <path d="M275 104 c-12 22 12 34 0 56"/>
+  <rect width="512" height="512" fill="url(#g)"/>
+  <g fill="none" stroke="#d99a5b" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Steam -->
+    <g stroke-width="15" opacity="0.85">
+      <path d="M217 100 c-14 24 14 36 0 60"/>
+      <path d="M283 88 c-14 24 14 36 0 60"/>
+    </g>
+    <!-- Cup -->
+    <path stroke-width="20" d="M128 208 h215 v66 a107 96 0 0 1 -215 0 z"/>
+    <!-- Handle -->
+    <path stroke-width="20" d="M348 232 h16 a44 44 0 0 1 0 88 h-24"/>
+    <!-- Saucer -->
+    <path stroke-width="20" d="M150 428 h180"/>
   </g>
-  <!-- Saucer -->
-  <ellipse cx="245" cy="400" rx="150" ry="26" fill="#f5efe7" opacity="0.9"/>
-  <!-- Cup -->
-  <path d="M140 218 h210 v70 a105 92 0 0 1 -210 0 z" fill="#f5efe7"/>
-  <!-- Handle -->
-  <path d="M350 236 h18 a44 44 0 0 1 0 88 h-24" fill="none" stroke="#f5efe7" stroke-width="20"/>
-  <!-- Crema -->
-  <ellipse cx="245" cy="224" rx="93" ry="18" fill="#c89b74"/>
 </svg>

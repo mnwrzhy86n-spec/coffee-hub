@@ -19,7 +19,6 @@ illustration shows instead. To fill a slot, drop a JPEG into `images/` with the 
 | `images/step-1-prep.jpg` | The machine, ready to go |
 | `images/step-2-grind.jpg` | A correctly filled basket |
 | `images/step-3-tamp.jpg` | Tamping level |
-| `images/step-4-brew.jpg` | The shot flowing (honey-like) |
 | `images/step-5-milk.jpg` | Jug filled to the right level |
 | `images/step-6-clean.jpg` | Knocking out the puck |
 

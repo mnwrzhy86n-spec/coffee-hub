@@ -57,7 +57,7 @@
 
     function paintDots() {
       var i = currentIndex();
-      dots.forEach(function (dot, n) { dot.classList.toggle("on", n === i); });
+      dots.forEach(function (dot, n) { dot.classList.toggle("on", n <= i); });
     }
 
     var raf = null;
@@ -85,6 +85,53 @@
         resetChecks();
         goTo(1);
       });
+    });
+  }
+
+  /* ---------- Shot timer (brew step) ---------- */
+
+  var timer = document.querySelector("[data-timer]");
+  if (timer) {
+    var readout = timer.querySelector(".t");
+    var hint = timer.querySelector("small");
+    var prog = timer.querySelector(".prog");
+    var CIRC = 2 * Math.PI * 52;
+    prog.setAttribute("stroke-dasharray", CIRC);
+    prog.setAttribute("stroke-dashoffset", CIRC);
+
+    var startedAt = 0;
+    var rafTimer = null;
+    var state = "idle";
+
+    function paintTimer(sec) {
+      readout.textContent = sec.toFixed(1);
+      prog.setAttribute("stroke-dashoffset", CIRC * (1 - Math.min(sec / 30, 1)));
+      timer.classList.toggle("good", sec >= 25 && sec <= 30);
+      timer.classList.toggle("over", sec > 30);
+    }
+
+    function tickTimer(now) {
+      paintTimer((now - startedAt) / 1000);
+      rafTimer = requestAnimationFrame(tickTimer);
+    }
+
+    timer.addEventListener("click", function () {
+      if (state === "idle") {
+        state = "running";
+        hint.textContent = "tap to stop";
+        startedAt = performance.now();
+        rafTimer = requestAnimationFrame(tickTimer);
+      } else if (state === "running") {
+        state = "done";
+        cancelAnimationFrame(rafTimer);
+        hint.textContent = "tap to reset";
+      } else {
+        state = "idle";
+        timer.classList.remove("good", "over");
+        readout.textContent = "0.0";
+        prog.setAttribute("stroke-dashoffset", CIRC);
+        hint.textContent = "tap to start";
+      }
     });
   }
 
